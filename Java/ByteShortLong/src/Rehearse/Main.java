@@ -33,26 +33,47 @@ public class Main {
 //
 //        System.out.println(name + "'s age is " + age);
 
-        System.out.println("Enter your nums");
-        Scanner scanner = new Scanner(System.in);
-        double sum = 0;
+//        System.out.println("Enter your nums");
+//        Scanner scanner = new Scanner(System.in);
+//        double sum = 0;
+//
+//        while(true){
+//            boolean isNum = scanner.hasNextInt();
+//            if (isNum){
+//                sum += scanner.nextInt();
+//                scanner.nextLine();
+//            }else{
+//                System.out.println(sum);
+//                break;
+//            }
+//
+//        }
+//        scanner.close();
 
-        while(true){
-            boolean isNum = scanner.hasNextInt();
-            if (isNum){
-                sum += scanner.nextInt();
-                scanner.nextLine();
-            }else{
-                System.out.println(sum);
-                break;
+        class SimpleCalculator {
+            private double firstNumber;
+            private double secondNumber;
+
+            public void setFirstNumber(double firstNumber){
+                this.firstNumber = firstNumber;
             }
-
+            public void setSecondNumber(double secondNumber) {
+                this.secondNumber = secondNumber;
+            }
+            public double getFirstNumber(){
+                return this.firstNumber;
+            }
+            public double getSecondNumber() {
+                return this.secondNumber;
+            }
+            public double getAdditionResult(){
+                return (firstNumber+secondNumber);
+            }
         }
 
-        scanner.close();
-
-
-
-
+        SimpleCalculator calculator = new SimpleCalculator();
+        calculator.setFirstNumber(5.0);
+        calculator.setSecondNumber(4);
+        System.out.println(calculator.getAdditionResult());
     }
 }
