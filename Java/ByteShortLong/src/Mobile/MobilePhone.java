@@ -11,7 +11,4 @@ public class MobilePhone {
         this.myContact = new ArrayList<Contact>();
     }
 
-    public boolean addNewContact(Contact contact){
-        if()
-    }
 }
