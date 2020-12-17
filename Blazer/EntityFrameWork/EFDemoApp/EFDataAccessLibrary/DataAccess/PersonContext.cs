@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using EFDataAccessLibrary.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace EFDataAccessLibrary.DataAccess
+{
+    class PersonContext:DbContext 
+    {
+        public PersonContext (DbContextOptions options): base(options) { }
+        public DbSet<Person> People { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Email> EmailAddresses { get; set; }
+    }   
+}

@@ -1,0 +1,9 @@
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.deps.json
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.dll
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\bin\Debug\netstandard2.0\EmployeeManagement.Models.pdb
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.csprojAssemblyReference.cache
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.AssemblyInfoInputs.cache
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.AssemblyInfo.cs
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.csproj.CoreCompileInputs.cache
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.dll
+C:\Users\moham\Desktop\moso\Blazer\BlazerToutorial\EmployeeManagement.Models\obj\Debug\netstandard2.0\EmployeeManagement.Models.pdb
