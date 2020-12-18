@@ -1,0 +1,39 @@
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\bin\Debug\netcoreapp3.1\Temp.exe
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\bin\Debug\netcoreapp3.1\Temp.deps.json
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\bin\Debug\netcoreapp3.1\Temp.runtimeconfig.json
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\bin\Debug\netcoreapp3.1\Temp.runtimeconfig.dev.json
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\bin\Debug\netcoreapp3.1\Temp.dll
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\bin\Debug\netcoreapp3.1\Temp.pdb
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\obj\Debug\netcoreapp3.1\Temp.csprojAssemblyReference.cache
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\obj\Debug\netcoreapp3.1\Temp.AssemblyInfoInputs.cache
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\obj\Debug\netcoreapp3.1\Temp.AssemblyInfo.cs
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\obj\Debug\netcoreapp3.1\Temp.csproj.CoreCompileInputs.cache
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\obj\Debug\netcoreapp3.1\Temp.dll
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\obj\Debug\netcoreapp3.1\Temp.pdb
+C:\Users\moham\Desktop\moso\C#\Temp\Temp\obj\Debug\netcoreapp3.1\Temp.genruntimeconfig.cache
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.exe
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.deps.json
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.runtimeconfig.json
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.runtimeconfig.dev.json
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.dll
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.pdb
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.csprojAssemblyReference.cache
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.AssemblyInfoInputs.cache
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.AssemblyInfo.cs
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.csproj.CoreCompileInputs.cache
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.dll
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.pdb
+D:\Tutorial\C#\Complete C# Masterclass\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.genruntimeconfig.cache
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.exe
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.deps.json
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.runtimeconfig.json
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.runtimeconfig.dev.json
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.dll
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\bin\Debug\netcoreapp3.1\Temp.pdb
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.csprojAssemblyReference.cache
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.AssemblyInfoInputs.cache
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.AssemblyInfo.cs
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.csproj.CoreCompileInputs.cache
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.dll
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.pdb
+C:\Users\moham\Desktop\moso\C#\Reherce_Project\Temp\obj\Debug\netcoreapp3.1\Temp.genruntimeconfig.cache

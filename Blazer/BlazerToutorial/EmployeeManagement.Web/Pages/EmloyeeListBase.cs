@@ -33,7 +33,7 @@ namespace EmployeeManagement.Web.Pages
                 Email = "email1",
                 DateOfBirth = new DateTime(2020,1,1),
                 Gender = Gender.Female,
-                DeaprtmentId = 1,
+                DepartmentId = 1,
                 PhotoPath = "images/1.jpg"
             };
 
@@ -45,7 +45,7 @@ namespace EmployeeManagement.Web.Pages
                 Email = "email2",
                 DateOfBirth = new DateTime(2020, 1, 2),
                 Gender = Gender.Female,
-                DeaprtmentId = 2,
+                DepartmentId = 2,
                 PhotoPath = "images/2.jpg"
 
             }; 
@@ -58,7 +58,7 @@ namespace EmployeeManagement.Web.Pages
                 Email = "email3",
                 DateOfBirth = new DateTime(2020, 1, 3),
                 Gender = Gender.Female,
-                DeaprtmentId = 3,
+                DepartmentId = 3,
                 PhotoPath = "images/3.jpg"
 
             }; 
@@ -71,7 +71,7 @@ namespace EmployeeManagement.Web.Pages
                 Email = "email4",
                 DateOfBirth = new DateTime(2020, 1, 4),
                 Gender = Gender.Female,
-                DeaprtmentId = 4,
+                DepartmentId = 4,
                 PhotoPath = "images/4.jpg"
             };
             
