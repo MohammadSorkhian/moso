@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeManagement.Api.Models
 {
-    public class DepartmentRepository : IDepartmentRepository
+    public class DepartmentRepository 
     {
         private readonly AppDbContext appDbContext;
         public DepartmentRepository(AppDbContext appDbContext)
@@ -19,7 +19,6 @@ namespace EmployeeManagement.Api.Models
             var result = await appDbContext.Departments.FirstOrDefaultAsync(d => d.DepartmentId == departmentId);
             return result;
          }
-
         public async Task<IEnumerable<Department>> GetDepartments()
         {
             var result = await appDbContext.Departments.ToListAsync();
