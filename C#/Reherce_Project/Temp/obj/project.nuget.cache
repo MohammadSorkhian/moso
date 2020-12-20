@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h0WxC8rF8JS3qd4tF/SILtr+/Qg4TxibzMwmyr+3r2T31MEVFDGJyB9AVSM4dQg/Kh4BQSdi0s16AcdR8GuCCw==",
+  "dgSpecHash": "k/MuCboWxgJJfR2C55plrYFlOiY6AJ5rh1iVdHeuhVRaHWFKEOdx4P/iZbdAbkOWxsXVDel3oiXcmycKF7t+7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\moham\\Desktop\\moso\\C#\\Reherce_Project\\Temp\\Temp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\moham\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\moham\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
