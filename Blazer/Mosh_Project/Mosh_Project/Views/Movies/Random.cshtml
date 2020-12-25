@@ -1,0 +1,20 @@
+﻿@model Mosh_Project.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<ul>
+    @foreach(var customer in Model.Customers)
+    {
+    <li>
+        <a href="#">@customer.Name</a>
+    </li>
+
+    }
+</ul>
+
+<h2>@Model.Movie.Name</h2>
+@Model.Customers
+

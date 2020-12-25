@@ -2,7 +2,14 @@
 using System.Collections;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
-Console.WriteLine("hi");
-    
+var x  = addNum(10, 20);
+
+Console.WriteLine(x);
+int addNum (int a, int b)
+{
+    return a + b;
+}
+
 
