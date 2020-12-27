@@ -6117,11 +6117,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moham\\Desktop\\moso\\C#\\EntityFramework\\EntityFramework\\EntityFramework.csproj",
+      "projectUniqueName": "C:\\Users\\moham\\Desktop\\moso\\C#\\EntityFramework - Advance\\EntityFramework\\EntityFramework.csproj",
       "projectName": "EntityFramework",
-      "projectPath": "C:\\Users\\moham\\Desktop\\moso\\C#\\EntityFramework\\EntityFramework\\EntityFramework.csproj",
+      "projectPath": "C:\\Users\\moham\\Desktop\\moso\\C#\\EntityFramework - Advance\\EntityFramework\\EntityFramework.csproj",
       "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moham\\Desktop\\moso\\C#\\EntityFramework\\EntityFramework\\obj\\",
+      "outputPath": "C:\\Users\\moham\\Desktop\\moso\\C#\\EntityFramework - Advance\\EntityFramework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",
