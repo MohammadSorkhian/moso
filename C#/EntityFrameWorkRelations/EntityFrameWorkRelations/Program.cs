@@ -72,13 +72,19 @@ async Task QueryData()
     Console.WriteLine();
 
 
+    //list of bricks with vendors and tags
+
+
+
     var brickWithVendorAndTags = await context.Bricks
-        .Include(ba => ba.Tags)
+        .Include(nameof(Brick.Availability) + "." + nameof(BrickAvailability.vendor))
+        .Include(ba => ba.Tags) /*Here is another way to do this:  .Include(nameof(Brick.Tags)) */
         .ToArrayAsync();
     foreach( var item in brickWithVendorAndTags)
     {
         Console.WriteLine($"Brack {{{item.Title}}}");
         if (item.Tags.Any()) Console.WriteLine($"{string.Join(',',item.Tags.Select(t => t.Title))}");
+        if (item.Availability.Any()) Console.WriteLine($"is available in {string.Join(',', item.Availability.Select(v => v.vendor.vendorName))}");
     }
 }
 
