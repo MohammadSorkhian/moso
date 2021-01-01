@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -6,9 +7,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WebApplication1.Models;
+using WebApplication1.ViewModels;
 
 namespace WebApplication1.Controllers
 {
+    [Route("[controller]/[action]")]
     public class HomeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -18,17 +21,24 @@ namespace WebApplication1.Controllers
             _employeeRepository = employeeRepository;
         }
 
-        public string Index()
+        [Route("~/")]       // .../
+        [Route("~/Home")]   // .../Home
+        [Route("")]         // .../Home/Index
+        public ViewResult Index()
         {
-            return _employeeRepository.GetEmployee(1).Name;
+            return View("Index", _employeeRepository.employeeList());
         }
 
-        public ViewResult Details()
+        [Route("{id?}")]
+        public ViewResult Details(int? id)
         {
-            Employee model = _employeeRepository.GetEmployee(1);
-            ViewBag.employee = model;
-            ViewBag.title = "Employee Details";
-            return View ("Details");
+            Employee model = _employeeRepository.GetEmployee(id?? 1);
+            HomeDetailsViewModel homeDetailsViewModel = new()
+            {
+                employee = model,
+                PageTitle = "Employee Details"
+            };
+            return View ("Details", homeDetailsViewModel);
         }
 
         //private readonly ILogger<HomeController> _logger;

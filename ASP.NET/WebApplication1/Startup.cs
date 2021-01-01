@@ -42,7 +42,9 @@ namespace WebApplication1
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -55,6 +57,12 @@ namespace WebApplication1
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //// It was in the tutorial but it is not working
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute("df", "{controller = H}/{action= A}");
+            //});
         }
     }
 }

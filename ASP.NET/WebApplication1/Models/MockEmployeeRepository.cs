@@ -20,6 +20,11 @@ namespace WebApplication1.Models
             };
         }
 
+        public IEnumerable<Employee> employeeList()
+        {
+            return _employeelist;
+        }
+
         public Employee GetEmployee(int id)
         {
             return _employeelist.FirstOrDefault(Emp => Emp.Id == id);

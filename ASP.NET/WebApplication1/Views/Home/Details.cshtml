@@ -1,13 +1,22 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿@model HomeDetailsViewModel
+@{
+    ViewBag.Title = "Employee Details";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>@Model.PageTitle</title>
 </head>
 <body>
     <div>
-        <h1>@ViewBag.title</h1>
+        <h2>@Model.employee.Name</h2>
     </div>
-    <div>Name: @ViewBag.employee.Name</div>
-    <div>Department: @ViewBag.employee.Department</div>
-    <div>Email: @ViewBag.employee.Email</div>
+    <div>Department:    @Model.employee.Department</div>
+    <div>Email:    @Model.employee.Email</div>
+    <div>
+            <a style="margin-right:5px" href="#">Back</a>
+            <a style="margin-right:5px" href="#">Edit</a>
+            <a style="margin-right:5px" href="#">Delete</a>
+    </div>
 </body>
 </html>
