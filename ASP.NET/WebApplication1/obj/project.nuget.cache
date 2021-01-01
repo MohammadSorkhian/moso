@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jtaOyDFOIwcgol+qQ5OzHNGsum3G6RjrpJbCpKLa0Nn6SuSkproyokmgc5SujAbc8yAOwYGRsaLHDp/yh0IW/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moham\\Desktop\\moso\\ASP.NET\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
