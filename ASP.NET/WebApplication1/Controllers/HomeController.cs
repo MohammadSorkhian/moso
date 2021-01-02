@@ -21,13 +21,15 @@ namespace WebApplication1.Controllers
             _employeeRepository = employeeRepository;
         }
 
+
         [Route("~/")]       // .../
         [Route("~/Home")]   // .../Home
         [Route("")]         // .../Home/Index
         public ViewResult Index()
         {
-            return View("Index", _employeeRepository.employeeList());
+            return View("Index", _employeeRepository.GetAllEmployee());
         }
+
 
         [Route("{id?}")]
         public ViewResult Details(int? id)
@@ -39,6 +41,24 @@ namespace WebApplication1.Controllers
                 PageTitle = "Employee Details"
             };
             return View ("Details", homeDetailsViewModel);
+        }
+
+        [HttpGet]
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult create(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                Employee newEmployee = _employeeRepository.Add(employee);
+                return RedirectToAction("Details", new { id = newEmployee.Id });
+            }
+            return View();
         }
 
         //private readonly ILogger<HomeController> _logger;

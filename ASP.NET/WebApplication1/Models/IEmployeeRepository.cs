@@ -8,6 +8,9 @@ namespace WebApplication1.Models
     public interface IEmployeeRepository
     {
         Employee GetEmployee(int id);
-        IEnumerable<Employee> employeeList();
+        IEnumerable<Employee> GetAllEmployee();
+        Employee Add(Employee employee);
+        Employee Update(Employee employeeChanges);
+        Employee Delete(int id);
     }
 }

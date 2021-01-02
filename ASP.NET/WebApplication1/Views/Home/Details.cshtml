@@ -14,9 +14,12 @@
     <div>Department:    @Model.employee.Department</div>
     <div>Email:    @Model.employee.Email</div>
     <div>
-            <a style="margin-right:5px" href="#">Back</a>
+            <a asp-controller="Home" asp-action="Index" style="margin-right:5px">Back</a>
             <a style="margin-right:5px" href="#">Edit</a>
             <a style="margin-right:5px" href="#">Delete</a>
+    </div>
+    <div>
+        <img  asp-append-version="true" src="~/img/puffin.jpg" alt="Puffin Image"/>
     </div>
 </body>
 </html>
