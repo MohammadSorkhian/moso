@@ -29,7 +29,7 @@ namespace WebApplication1
     Configuration["ConnectionStrings:EmployeeDBConnection"]));
             //services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer());
             services.AddControllersWithViews();
-            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
             services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 

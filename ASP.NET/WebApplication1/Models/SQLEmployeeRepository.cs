@@ -37,21 +37,23 @@ namespace WebApplication1.Models
 
         public IEnumerable<Employee> GetAllEmployee()
         {
-            throw new NotImplementedException();
+            return context.Employees;
         }
 
 
         public Employee GetEmployee(int id)
         {
-            throw new NotImplementedException();
+            Employee employee = context.Employees.Find(id);
+            return employee;
         }
 
 
         public Employee Update(Employee employeeChanges)
         {
-            throw new NotImplementedException();
+            var employee = context.Employees.Attach(employeeChanges);
+            employee.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            context.SaveChanges();
+            return employeeChanges;
         }
-    }
-    {
     }
 }

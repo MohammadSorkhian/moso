@@ -1,6 +1,7 @@
 ﻿@model HomeDetailsViewModel
 @{
     ViewBag.Title = "Employee Details";
+    var photoPath = "~/img/" + (Model.employee.PhotoPath ?? "puffin.jpg");
 }
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -15,11 +16,11 @@
     <div>Email:    @Model.employee.Email</div>
     <div>
             <a asp-controller="Home" asp-action="Index" style="margin-right:5px">Back</a>
-            <a style="margin-right:5px" href="#">Edit</a>
+            <a asp-controller="home" asp-action="Edit" asp-route-id="@Model.employee.Id" style="margin-right:5px" >Edit</a>
             <a style="margin-right:5px" href="#">Delete</a>
     </div>
     <div>
-        <img  asp-append-version="true" src="~/img/puffin.jpg" alt="Puffin Image"/>
+        <img  asp-append-version="true" src="@photoPath" alt="Puffin Image" style="width:150px; height:auto"/>
     </div>
 </body>
 </html>

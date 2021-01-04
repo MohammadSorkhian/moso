@@ -10,6 +10,14 @@
     <div>
         @RenderBody()
     </div>
-    <div><h6>Copy Right by Mohammad Sorkhian</h6></div>
+
+    @if (IsSectionDefined("scripts"))
+    {
+        @RenderSection("Scripts", required:true)
+    }
+
+    <div>
+        <h6>Copy Right by Mohammad Sorkhian</h6>
+    </div>
 </body>
 </html>

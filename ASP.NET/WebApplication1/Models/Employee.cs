@@ -21,6 +21,7 @@ namespace WebApplication1.Models
 
         [Required]
         public Department? Department { get; set; }
+        public String PhotoPath { get; set; }
 
     }
 }
