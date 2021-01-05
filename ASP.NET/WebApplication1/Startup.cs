@@ -50,6 +50,9 @@ namespace WebApplication1
                 //MoSo: the following two lines do the same task and have relatively simmilar output. But in the secoond one the URL does not change to Error/{0} route. Therefore the second one is better
                 //app.UseStatusCodePagesWithRedirects("/Error/{0}");
                 app.UseStatusCodePagesWithReExecute("/Error/{0}");
+
+                //MoSo: This error handeling is for the cases that an error occure in the server and it is not by the wrong-entered url by user.
+                app.UseExceptionHandler("/InternalError");
             }
 
             app.UseHttpsRedirection();
