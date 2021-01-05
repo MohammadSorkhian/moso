@@ -387,3 +387,5 @@ C:\Users\moham\Desktop\moso\ASP.NET\WebApplication1\bin\Debug\net5.0\runtimes\wi
 C:\Users\moham\Desktop\moso\ASP.NET\WebApplication1\bin\Debug\net5.0\Humanizer.dll
 C:\Users\moham\Desktop\moso\ASP.NET\WebApplication1\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\moham\Desktop\moso\ASP.NET\WebApplication1\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\moham\Desktop\moso\ASP.NET\WebApplication1\obj\Debug\net5.0\Razor\Views\Home\EmployeeNotFound.cshtml.g.cs
+C:\Users\moham\Desktop\moso\ASP.NET\WebApplication1\obj\Debug\net5.0\Razor\Views\Shared\NotFound.cshtml.g.cs

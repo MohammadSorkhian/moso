@@ -24,6 +24,7 @@ namespace WebApplication1.Controllers
         }
 
 
+
         [Route("~/")]       // .../
         [Route("~/Home")]   // .../Home
         [Route("")]         // .../Home/Index
@@ -33,10 +34,18 @@ namespace WebApplication1.Controllers
         }
 
 
+
         [Route("{id?}")]
         public ViewResult Details(int? id)
         {
             Employee model = _employeeRepository.GetEmployee(id?? 1);
+
+            if(model == null)
+            {
+                Response.StatusCode = 404;
+                return View("EmployeeNotFound", id.Value);
+            }
+
             HomeDetailsViewModel homeDetailsViewModel = new()
             {
                 employee = model,
@@ -45,11 +54,14 @@ namespace WebApplication1.Controllers
             return View ("Details", homeDetailsViewModel);
         }
 
+
+
         [HttpGet]
         public ViewResult Create()
         {
             return View();
         }
+
 
 
         [HttpPost]
@@ -73,6 +85,7 @@ namespace WebApplication1.Controllers
         }
 
 
+
         [HttpGet]
         public ViewResult Edit(int id)
         {
@@ -87,6 +100,7 @@ namespace WebApplication1.Controllers
             };
             return View(employeeEditViewModel);
         }
+
 
 
         [HttpPost]
@@ -114,6 +128,8 @@ namespace WebApplication1.Controllers
             }
             return View();
         }
+
+
 
         private string ProcessUploadedFile(EmployeeCreateViewModel model)
         {

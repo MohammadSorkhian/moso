@@ -42,9 +42,14 @@ namespace WebApplication1
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                //app.UseExceptionHandler("/Home/Error");
+                ////The default HSTS value is 30 days.You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                //app.UseHsts();
+
+                //MoSo: This command catches any page that user wants to acces but it has not been defined in the routes and maps the error's code to {0}. We sould not be inn the developer environment.
+                //MoSo: the following two lines do the same task and have relatively simmilar output. But in the secoond one the URL does not change to Error/{0} route. Therefore the second one is better
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
 
             app.UseHttpsRedirection();
