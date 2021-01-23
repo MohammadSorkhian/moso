@@ -1,0 +1,60 @@
+﻿@page
+@model BookListRazor.Pages.BookList.IndexModel
+@{
+}
+<div class="container p-0 m-0">
+    <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-9 col-xl-9 col-xxl-8">
+            <h2 class="text-info">Book List</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+            <a href="/booklist/create" class="btn btn-info form-control">Create New Book</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 border mt-4">
+            <form action="/" method="post">
+                @if (Model.Books.Count() > 0)
+                {
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"> Name </th>
+                                <th scope="col"> Author </th>
+                                <th scope="col"> ISBN </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var book in Model.Books)
+                            {
+                                <tr>
+                                    <td>
+                                        @book.Name
+                                    </td>
+                                    <td>
+                                        @book.Author
+                                    </td>
+                                    <td>
+                                        @book.ISBN
+                                    </td>
+                                    <td>
+                                        <a asp-page="/booklist/Edit" asp-route-id="@book.Id" class="btn btn-success btn-sm" >Edit</a>
+                                        @*<button asp-page-handler="Delete" asp-route-Id="@book.Id" onclick="return confirm('Are you sure you want to delete book @book.Name') " class="btn btn-danger btn-sm" >Delete</button>*@
+                                        <button asp-page-handler="Delete" asp-route-id="@book.Id" class="btn btn-danger btn-sm" >Delete</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                }
+                else
+                {
+                    <p>There is no book in the DataBase </p>
+                }
+            </form>
+        </div>
+    </div>
+
+</div>

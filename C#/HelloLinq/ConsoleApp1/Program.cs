@@ -54,6 +54,53 @@ var cars = JsonSerializer.Deserialize<CarData[]>(fileContent);
 //}).ToList()
 //.ForEach(c => global::System.Console.WriteLine(c.range + " " + c.numberOfMakersInEachRange));
 
+//cars
+//    .OrderBy(car => car.Year).Take(10)
+//    .ToList()
+//    .ForEach(c => Console.WriteLine($"{c.Make}-{c.Model}-{c.Year}-{c.NumberOfDoors}"));
+
+//Console.WriteLine("-------------");
+
+//cars
+//    .Where(c => c.HP > 496)
+//    .ToList()
+//    .ForEach(c => Console.WriteLine($"{c.Make}-{c.Model}-{c.Year}-{c.NumberOfDoors}-{c.HP}"));
+
+//Console.WriteLine("-------------");
+
+//var num = new List<int> { 10, 50, 20, 30, 40, 50, 60 };
+//num.TakeWhile(n => n < 40).ToList().ForEach(x => Console.WriteLine(x));
+
+
+
+//cars
+//    .TakeWhile(c => c.HP > 4)
+//    .ToList()
+//    .ForEach(c => Console.WriteLine($"{c.Make}-{c.Model}-{c.Year}-{c.NumberOfDoors}-{c.HP}"));
+
+List<Student> listStudent = new List<Student>
+{
+new Student() { name = "s1", subjects = new List<string> { "a", "b" } },
+new Student() { name = "s2", subjects = new List<string> { "c", "d" } }
+};
+
+////.Select: mergs different lists into one list
+//listStudent.SelectMany(s => s.subjects).ToList().ForEach(x => Console.WriteLine(x));
+////.SelectMany: helpe us to loop through a list in an element
+//listStudent.SelectMany(s => s.subjects, (st, sub) => new { st.name, sub }).ToList().ForEach(st_sub => Console.WriteLine($"{st_sub.name} has {st_sub.sub}"));
+
+
+
+
+
+
+
+class Student
+{
+    public string name { get; set; }
+    public List<string> subjects { get; set; }
+}
+
 
 
 
@@ -78,5 +125,6 @@ class CarData
     public int HP { get; set; }
 
 }
+
 
 
