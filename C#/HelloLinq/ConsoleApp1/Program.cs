@@ -148,15 +148,20 @@ var ListOfEmployees = new List<Employee>
 //    .ToList()
 //    .ForEach( pair => Console.WriteLine(pair.employeeName + "  " + pair.departmentName));
 
-var EmployeeDepartments = ListOfEmployees
-    .GroupJoin(ListOfDepartments, d => d.DepartmentID, e => e.id, (emp, deps) => new { employee = emp, departmentList = deps })
-    .SelectMany( s => s.departmentList.DefaultIfEmpty(), 
-    (item, defaultIfemptyResult) => new { empoyee = item.employee, departmentList = defaultIfemptyResult == null? "No department" : defaultIfemptyResult.Name});
-foreach (var item in EmployeeDepartments)
-{
-        Console.WriteLine(item.empoyee.Name + "\t" + item.departmentList);
-}
+//var EmployeeDepartments = ListOfEmployees
+//    .GroupJoin(ListOfDepartments, d => d.DepartmentID, e => e.id, (emp, deps) => new { employee = emp, departmentList = deps })
+//    .SelectMany( s => s.departmentList.DefaultIfEmpty(), 
+//    (item, defaultIfemptyResult) => new { empoyee = item.employee, departmentList = defaultIfemptyResult == null? "No department" : defaultIfemptyResult.Name});
+//foreach (var item in EmployeeDepartments)
+//{
+//        Console.WriteLine(item.empoyee.Name + "\t" + item.departmentList);
+//}
 
+//var crossJoin = ListOfEmployees.SelectMany(e => ListOfDepartments, ( e, d) => new { e,d});
+//foreach(var x in crossJoin)
+//{
+//    Console.WriteLine(x.e.Name + "\t" + x.d.Name);
+//}
 
 
 
