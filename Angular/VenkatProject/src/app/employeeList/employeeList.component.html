@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table col-10">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Annual Salary</th>
+                    <th>Date of Bitrh</th>
+                    <th>Index</th>
+                    <th>Is First</th>
+                    <th>Is Last</th>
+                    <th>Is Odd</th>
+                    <th>Is Even</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let emp of employees; let i=index; let isFirst=first; let isLast=last; let isOdd=odd; let isEven=even">
+                    <td>{{emp.code.toUpperCase()}}</td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.gender}}</td>
+                    <td>{{emp.salary}}</td>
+                    <td>{{emp.dateOfBirth}}</td>
+                    <td>{{i}}</td>
+                    <td>{{isFirst}}</td>
+                    <td>{{isLast}}</td>
+                    <td>{{isOdd}}</td>
+                    <td>{{isEven}}</td>
+
+                </tr>
+                <tr *ngIf="!employees || employees.length==0">
+                    <td colspan=5 >There is no employee</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
