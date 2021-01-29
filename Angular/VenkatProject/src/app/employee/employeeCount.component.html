@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <span class="mr-2">Show :</span>
+        <div class="form-check form-check-inline mr-4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="All" [(ngModel)]="selectedRadioButtonValue" (change) = 'onRadioButonSelectionChange()'>
+            <label class="form-check-label" for="inlineRadio1">All({{all}})</label>
+        </div>
+
+        <div class="form-check form-check-inline mr-4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Male" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male" [(ngModel)]="selectedRadioButtonValue" (change) = 'onRadioButonSelectionChange()'>
+            <label class="form-check-label" for="inlineRadio2">Male({{male}})</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Female" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Female" [(ngModel)]="selectedRadioButtonValue" (change) = 'onRadioButonSelectionChange()'>
+            <label class="form-check-label" for="inlineRadio3">Female({{female}})</label>
+        </div>
+    </div>
+</div>
